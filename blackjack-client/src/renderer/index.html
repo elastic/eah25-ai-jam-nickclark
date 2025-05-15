@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Blackjack Client</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>Blackjack Bot 😎</h1>
+            <div id="connection-status">Status: Disconnected</div>
+        </header>
+
+        <main>
+            <div id="game-table">
+                <div id="dealer-area">
+                    <h2>Dealer</h2>
+                    <div class="hand" id="dealer-hand">
+                        <!-- Cards will be added here -->
+                    </div>
+                    <div id="dealer-score" class="score">Score: 0</div>
+                </div>
+
+                <div id="player-area">
+                    <h2>Player</h2>
+                    <div class="hand" id="player-hand">
+                        <!-- Cards will be added here -->
+                    </div>
+                    <div id="player-score" class="score">Score: 0</div>
+                </div>
+            </div>
+
+            <div id="game-info">
+                <h3>Game Information</h3>
+                <p>Balance: <span id="player-balance">---</span></p>
+                <p>Current Bet: <span id="current-bet">---</span></p>
+                <p>Last Action: <span id="last-action">---</span></p>
+                <div id="message-log-container">
+                    <h4>Server/Client Log:</h4>
+                    <div id="message-log">
+                        <!-- Log messages will appear here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Autonomous Blackjack Client - Electron Forge</p>
+        </footer>
+    </div>
+
+    <!-- <script src="renderer.js"></script> -->
+</body>
+</html> 
